@@ -23,3 +23,40 @@
   padding-left: 29px;
   padding-right: 7px;
 }
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 37px 28px;
+  gap: 13px;
+}
+
+.form-inputs{
+  display: flex;
+  gap: 34px;
+}
+
+.form-label{
+  display: block;
+}
+
+.form-input{
+  width: 46.6vw;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 4px;
+  border-color: #D1D5DB;
+}
+
+
+
+.submit-btn{
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: #FFFFFF;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
