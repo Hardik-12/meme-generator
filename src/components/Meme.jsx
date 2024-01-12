@@ -16,12 +16,14 @@ export default function Meme(){
 
 
     React.useEffect(() => {
-        fetch('https://api.imgflip.com/get_memes')
+        async function getMemes(){
+            const res = await fetch('https://api.imgflip.com/get_memes')
+            const data = await res.json()
+            setAllMemeImages(data.data.memes)
+        }
 
-        .then(res => res.json())
-
-        .then(data => setAllMemeImages(data.data.memes))
-    })
+        getMemes()
+    }, [])
 
     function handleChange(event){
         const {name, value} = event.target
